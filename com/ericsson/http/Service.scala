@@ -11,7 +11,7 @@ object Service {
         NIOServer.serverPort = 80; //by default,
         //com.ericsson.url.UrlShorter.init; //data persistency is not needed
         new Thread(NIOServer).start();
-        new Thread(NIOAcceptor).start();
+        //new Thread(NIOAcceptor).start();
         new Thread(ClusterWatchDog).start();
         NIOServer.startListen(NIOServer.serverPort);
         
